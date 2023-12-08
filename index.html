@@ -1,11 +1,133 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <link rel="stylesheet" href="index.css">
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
-    <div></div>
-  </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kasama Website</title>
+    <link rel="stylesheet" href="stylesheet/stylesheet.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> 
+
+</head>
+<body class="text">
+
+    <div id="mobile-nav" style="display: none;">
+        <button id="close-menu" class="navbutton">X</button>
+            <a href="#">Contact</a>
+            <a href="#">About Us</a>
+            <a href="#">Hours</a>
+            <a href="#">Location</a>  
+    </div>
+
+    <header class="grid-container header">
+        <nav>
+            <img class="navlogo" src="images/Kasama lower case-03.png" width="180" height="50">
+        </nav>
+        <nav class="navtext">
+            <a class="navlink" href="#">Contact</a>
+            <a class="navlink" href="#">About Us</a>
+            <a class="navlink" href="#">Hours</a>
+            <a class="navlink" href="#">Location</a>  
+        </nav>
+        <nav>
+            <a id="hamburger-menu" href="#" class="navmenubutton" style="color: white;">Menu</a>
+            <img class="socialmedianav" src="images/104498_facebook_icon.png" width="20px">
+            <img class="socialmedianav" src="images/1161953_instagram_icon.png" width="20px">  
+        
+        </nav>
+    </header>
+    <main>
+        <section class="banner-image ">
+            <div class="banner-text">
+                 <h1>Authentic Taste by Professional Chefs</h1>
+                 <a href="#" class="bannermenubutton">View Menu</a>
+                </div>
+        </section>
+        
+        <section class="marginforsection  gridforsection">
+                <div class="dishesimagealignment">
+                    <img src="images/Salad_bowl.jpg" alt="Salad bowl image" width="462">
+                </div>
+                <div class="dishestextalignment">       
+                    <h1><strong>Quality Filipino Dishes</strong></h1>
+                     <p class="filidishesbody">Kasama is a Michelin starred bakery, café, and modern Filipino tasting in Chicago, Illinois. We pride ourselves in our quality Filipino dishes, made by experienced Filipino chefs. Additionally, we feature several sweet, delectable pastries and desserts as well as distinguished beverages ranging from coffee to wine.</p>
+                </div>
+        </section>
+        <section class="reservationimage">
+            <div class="whitetext">
+                <h1 class="reservationheader"><strong>Make a Reservation Today!</strong></h1>
+                <p class="reservationbody">Our seating is available through reservation only, in exception for brunch, which is first come first serve. Our dinner, available for reservation, features a 13 course, fine dining, Filipino-inspired tasting menu.</p>
+                <a href="#" class="navmenubutton">Reserve a table</a>
+            </div>
+        </section>
+        <section>
+            <div class="marginforsection gridforsection">
+                <div class="hoursbody">
+                    <h1><strong>Hours</strong></h1>
+                    <p><strong>Daytime Service</strong></p>
+                    <p>Wednesday - Sunday
+                    9am - 3pm (kitchen closes at 2pm)
+                    </p>
+                    <p><strong>Dinner Service</strong></p>
+                    <p>Thursday - Sunday
+                    *requires reservation
+                    </p>
+                </div>
+                <div class="location">
+                    <h1 style="text-align: center;"><strong>Location</strong></h1>
+                    <p>Address:
+                       1001 N. Winchester Ave.
+                       Chicago, Illinois 60622
+                    </p>
+                    <img src="images/Map_image.png" alt="Map link" width="120px">   
+                </div>
+            </div>
+        </section>
+        <section class="whoweareimage">
+            <div class="whitetext">
+                <h1 class="whoweareheader"><strong>Who We Are</strong></h1>
+                <p class="whowearebody">Kasama is a bakery and modern Filipino restaurant led by chefs Genie Kwon and Timothy Flores located in the East Ukrainian Village neighborhood of Chicago. We look forward to welcoming you!</p>
+                <a href="#" class="navmenubutton">Contact Us</a>
+            </div>
+        </section>
+        <section>
+            <div class="marginforsection">
+                <h1 class="checkoutarticlefont"><strong>Check Out These Articles</strong></h1>
+            </div>
+            <div class="articlesbackground gridforarticle">
+                <div class="articlemargin articlepadding articlebodytext michelinarticle">
+                    <h2><strong>Michelin Star 2022</strong></h2>
+                    <p>We're excited to announce our award of the Michelin Star 2022! For those who are unfamiliar, a Michelin Star is an award given to a restaurant that has excellent quality food judged on a high culinary standard. This is... (read more)</p>
+                </div>
+                <div class="michelinimage">
+                    <img src="images/Michelin2022.png" alt="michelin star logo" width="300px">
+                </div>
+                <div class="articlemargin articlepadding articlebodytext">
+                    <h2><strong>The 11 Best New Restaurants in America</strong></h2>
+                    <p>Eater's 11 best new restaurants for 2021 have one thing in common: tenacity. Amid an unprecedented crisis, chefs, bakers, and operators imagined new ways for diners to revel in the pleasure of a good meal and a shared experience... (read more)</p>
+                </div>
+                <div class="bestrestaurantsimage">
+                    <img src="images/10BestRestaurants.png" alt="best restaurants thumbnail" width="300px">
+                </div>
+        </section>
+    </main>
+    <footer>
+       <nav class="footerbox">
+                <a href="#">Contact</a>
+                <h2 class="hyphenforfooter">|</h2>
+                <a href="#">Hours</a>
+                <h2 class="hyphenforfooter">|</h2>
+                <a href="#">Location</a>
+                <h2 class="hyphenforfooter">|</h2>
+                <a href="#">About Us</a>
+                <h2 class="hyphenforfooter">|</h2>
+                <a href="#">Gift Cards</a>
+        </nav>
+        <nav class="footerlogo">
+            <img src="images/Kasama icon.png" alt="kamama logo" width="100px">
+        </nav>
+    </footer>
+<script src="javascript/javascript.js"></script>
+</body>
 </html>

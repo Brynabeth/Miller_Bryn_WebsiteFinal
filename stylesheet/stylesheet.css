@@ -1,0 +1,442 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    align-items: center;
+    max-width: 1920px;
+}
+
+.gridforsection {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1700px;
+}
+
+.grid-container > nav:nth-child(3) {
+    text-align: right;
+  }
+
+/* footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+    max-width: 1920px;
+} */
+
+footer a {
+    color: black;
+    text-decoration:none;
+}
+
+
+/* Mobile Navigation */
+#mobile-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw; /*(view width) */
+    height: 100vw;
+    background-color:#000000;
+    z-index: 999; /* (makes sure that it's in front of anything else) */
+}
+
+#mobile-nav a {
+    padding: 25px 0px;
+    display: block;
+    color: #DA5045;
+    font-size: 25px;
+    text-align: center;
+    text-decoration: none;
+    border-bottom: solid 1px #4a4a4a;
+}
+
+#mobile-nav button {
+    padding: 25px;
+    background-color: transparent;
+    color: white;
+    font-size: 30px;
+    border-radius: 0px 10px 10px 10px;
+}
+
+
+
+.footerbox {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    padding: 20px 5px;
+    max-width: 1920px;
+    margin: 10px 300px;
+    text-align: center;
+}
+
+.hyphenforfooter {
+    margin-bottom: 25px;
+    margin-top: -5px;
+}
+
+.footerlogo {
+    margin: auto;
+    text-align: center;
+}
+
+.material-symbols-outlined {  
+    font-variation-settings:  
+        'FILL' 1,  
+        'wght' 500,  
+        'GRAD' 0,  
+        'opsz' 24,
+}
+
+.header {
+    padding: 15px;
+    box-shadow: 0 0 10px #888888;
+}
+
+.nav {
+    text-align: left;
+}
+
+.navtext {
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.navlink {
+    padding: 23px;
+}
+
+.text {
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Lato', sans-serif;
+}
+/*tags without the period are called global selectors.*/
+
+.grid-container a {
+    color: rgb(0, 0, 0);
+    
+}
+
+.socialmedianav {
+    width: 20px;
+}
+
+.navlogo {
+    width: 180px;
+    height: 50px;
+}
+
+.nav button {
+    display: none;
+} 
+
+@media screen and (max-width: 648px) {
+    nav a {
+        display: none;
+    }
+    nav button {
+        display: inline;
+    }
+    .socialmedianav {
+        display: none;
+    }
+    .dishesimagealignment {
+        text-align: center;
+    }
+    .gridforsection {
+        grid-template-columns: auto;
+        justify-content: center;
+    }
+    .dishestextalignment h1 {
+        position:relative;
+    }
+    .filidishesbody {
+        max-width: 200px;
+    }
+    .hourspadding {
+        padding-left: 0px;
+        position: relative;
+        text-align: center;
+        justify-content: flex-start;
+    }
+    .gridforarticle {
+        max-width: 600px;
+        grid-template-columns: 1fr;
+    }
+    .locationpadding {
+        padding-left: 0px;
+    }
+    .location {
+        text-align: center;
+        margin: auto;
+        justify-content: flex-start;
+        position: relative;
+    }
+    .gridforarticle {
+        grid-template-columns: 1fr;
+        max-width: 610px;
+    }
+    .articlesbackground {
+        height: 1600px;
+    }
+    .michelinarticle {
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+    .articlepadding {
+        padding: 0px;
+    }
+    .reservationbody {
+        position: absolute;
+        right: 20%;
+        margin-right: 200px;
+    }
+}
+
+.location {
+    text-align: left;
+}
+
+.navmenubutton {
+    background-color: #DA5045; /* orange */
+    border-radius: 15px;
+    color: white;
+    padding: 10px 35px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.navbutton:hover {
+    cursor: pointer;
+}
+
+.bannermenubutton {
+    border: 4px solid white;
+    border-radius: 20px;
+    color: white;
+    padding: 20px 60px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 90px;
+}
+
+.banner-image {
+    padding: 30px;
+    position: relative;
+    background-image: url('../images/Soup_dish.jpg');
+    background-size: cover;
+    background-position: center center;
+    height: 400px;
+    max-width: 1920px;
+}
+
+.orangebuttons { /*yes. I think the buttons are orange, not red*/
+    background-color: #DA5045;
+    border-radius: 15px;
+    color: #200D1B;
+    padding: 20px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.alignment {
+    max-width: 1920px;
+}
+
+.banner-text {
+    top: 0%;
+    max-width: 1280px;
+    text-align: center;
+    color: white;
+    font-size: 36px;
+} 
+
+.filidishesbody { 
+    max-width: 380px;
+    line-height: 25px;
+}
+
+.dishestextalignment {
+    text-align: left;
+    margin-left: 50px;
+}
+
+.dishesimagealignment {
+    text-align: right;
+    margin-right: 50px;
+}
+
+.marginforsection {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    margin-left: 100px;
+}
+
+.articlepadding {
+    padding-top: 40px;
+    padding-left: 60px;
+}
+
+.reservationbutton {
+    position: absolute;
+}
+
+.reservationimage {
+    padding: 30px;
+    position: relative;
+    background-image: url('../images/Reservation-photo.png');
+    background-size: cover;
+    background-position: center center;
+    height: 500px;
+    max-width: 1920px;
+}
+
+.reservationheader {
+    position: absolute;
+    top: 30%;
+    transform: translateY(-50%);
+    max-width: 500px;
+    font-size: 30px;
+}
+
+.whitetext {
+    color: white;
+    margin: 40px;
+}
+
+.whowearesection {
+    align-items: right;
+}
+
+.reservationbody {
+    position: absolute;
+    bottom: 30%;
+    max-width: 550px;
+    font-size: 20px;
+    transform: translateX(0px);
+    line-height: 30px;
+}
+
+.hourslocationgrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    max-width: 1520px;
+}
+
+.hoursbody {
+    text-align: center;
+    max-width: 260px;
+}
+
+div.gridforsection > div:nth-child(2) > p:nth-child(2) {
+    line-height: 25px;
+  }
+
+div.gridforsection > div:nth-child(2) > h1:nth-child(1) {
+    max-width: 51px;
+  }
+
+div.gridforsection > div:nth-child(2) {
+    max-width: 260px;
+  }
+  
+/* .hourspadding {
+    padding-left: 350px;
+} */
+
+/* .locationpadding {
+    padding-left: 50px;
+} */
+
+.whoweareimage {
+    padding: 30px;
+    position: relative;
+    background-image: url('../images/WhoWeAre-photo.png');
+    background-size: cover;
+    background-position: center center;
+    height: 500px;
+    max-width: 1920px;
+    text-align: right;
+    padding-top: 40px;
+}
+
+.whoweareheader {
+    font-size: 30px;
+    padding-top: 20px;
+}
+
+.whowearebody {
+    position: relative;
+    bottom: 30%;
+    max-width: 500px;
+    font-size: 20px;
+    text-align: right;
+    transform: translateX(850px);
+    line-height: 34px;
+    padding-top: 42px;
+    padding-bottom: 69px;
+}
+
+.articlesbackground {
+    background-color: rgb(183, 183, 183);
+    height: 900px;
+    background-size: cover;
+    position: relative;
+    max-width: 1920px;
+}
+
+.articleimage {
+    max-width: 300px;
+}
+
+.gridforarticle {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1700px;
+}
+
+.articlebodytext {
+    text-align: left;
+    line-height: 25px;
+    max-width:400px;
+    /* margin-left: 200px; */
+}
+
+.checkoutarticlefont {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.articlemargin {
+    margin-left: 250px;
+}
+
+.michelinarticle {
+    margin-top: 100px;
+    margin-left: 250px;
+}
+
+.michelinimage {
+    margin-left: 150px;
+    margin-top: 100px;
+}
+
+.bestrestaurantsimage {
+    margin-left: 150px;
+}
+
+.articleviewmore {
+    text-align: center;
+    margin: 0px 100px;
+}
